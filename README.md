@@ -1,38 +1,30 @@
 # Healthcare-Appointment-Analytics-
 Project Overview
 
-This project analyzes healthcare appointment data to identify patterns in:
+Understand the factors affecting patient no-shows and identify opportunities to reduce missed appointments and improve clinic scheduling efficiency.
 
-Appointment attendance and no-shows
-Patient demographics
-Waiting time
-Health conditions
-SMS reminder effectiveness
+-----
+### Key Analytical Questions
+What is the overall no-show rate?
+Does age affect the likelihood of a no-show?
+Does gender affect the likelihood of a no-show?
+Does the day of the week affect the no-show rate?
+Does waiting time affect the likelihood of a no-show?
+Do SMS reminders help reduce no-shows?
+Which neighborhoods have the highest number of no-shows?
+Which patient groups have the highest risk of missing an appointment?
 
-The project was completed as a Test Assignment Simulation and includes data profiling, validation, cleaning, and exploratory analysis.
-
-Dataset
-Parameter	Description
-Dataset	Healthcare Appointment Analytics
-Source	Kaggle
-Format	CSV
-Storage	Local
-Updates	No planned updates
-Analysis Period	January 4, 2023 – July 23, 2023
-Data Profiling
-
-Before analysis, the dataset was checked for data quality issues.
-
-Metric	Result
-Rows	1,000
-Columns	16
-Missing Values	0
-Missing Values %	0%
-Duplicate AppointmentID	None
-Negative Age Values	None
+---
+### Data Cleaning
+Before analysis, the dataset was checked for data quality issues:
+-Missing Values	
+-Missing Values 
+-Duplicate AppointmentID	
+-Negative Age Values	
 
 The dataset was validated, cleaned, and prepared for further analysis.
 
+---
 Key Metrics
 Metric	Value
 Total Appointments	1,001
