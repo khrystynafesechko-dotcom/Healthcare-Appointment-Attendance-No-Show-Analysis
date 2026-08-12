@@ -32,7 +32,7 @@ The dataset contains information about scheduled medical appointments, patients,
 | Handicap | Handicap status |
 | SMS_received | Whether the patient received an SMS reminder |
 | No_show | Whether the patient missed the appointment |
-| 65+ | Whether the patient belongs to the 65+ age group |
+| Age_Group | Whether the patient belongs to the 65+ age group |
 | Waiting_Days | Number of days between scheduling and appointment |
 | Weekday | Day of the week of the appointment |
 
