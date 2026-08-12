@@ -54,7 +54,7 @@ For this analysis:
 
 ## Analysis Period
 
-The analyzed appointments cover the period from **January 4, 2023 to July 24, 2023**.
+The analyzed appointments cover the period from **January 4, 2024 to July 24, 2024**.
 
 ---
 
