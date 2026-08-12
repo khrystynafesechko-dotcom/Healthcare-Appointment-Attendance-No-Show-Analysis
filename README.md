@@ -25,11 +25,9 @@ The dataset contains information about scheduled medical appointments, patients,
 | AppointmentDay | Date of the appointment |
 | Age | Patient age |
 | Neighbourhood | Patient's neighbourhood |
-| Scholarship | Scholarship status |
 | Hypertension | Whether the patient has hypertension |
 | Diabetes | Whether the patient has diabetes |
-| Alcoholism | Whether the patient has an alcoholism record |
-| Handicap | Handicap status |
+| ARI | Acute respiratory infection |
 | SMS_received | Whether the patient received an SMS reminder |
 | No_show | Whether the patient missed the appointment |
 | Age_Group | Whether the patient belongs to the 65+ age group |
@@ -95,12 +93,12 @@ Patients in the dataset ranged from **0 to 90 years old**.
 
 | Health Condition | Quantity | % of Patients |
 |---|---:|---:|
-| Diabetes | 118 | 8.5% |
-| Hypertension | 242 | 17.5% |
-| Alcoholism | 59 | 4.3% |
-| Handicap | 642 | 46.4% |
+| Diabetes | 118 | 11.8% |
+| Hypertension | 242 | 24.2% |
+| ARI | 59 | 5.9% |
 
-Among the analyzed health-related characteristics, **handicap status represented the largest group**, with 642 recorded cases (46.4%).
+
+Among the analyzed health-related characteristics, **Hypertension status represented the largest group**, with 242 recorded cases (24.2%).
 
 ---
 
