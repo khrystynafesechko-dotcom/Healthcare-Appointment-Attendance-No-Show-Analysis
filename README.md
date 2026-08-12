@@ -1,121 +1,329 @@
-# Healthcare-Appointment-Analytics-
-Project Overview
+# Healthcare Appointment Attendance Analysis
 
-Understand the factors affecting patient no-shows and identify opportunities to reduce missed appointments and improve clinic scheduling efficiency.
+## Project Overview
 
------
-### Key Analytical Questions
-- What is the overall no-show rate?
-- Does age affect the likelihood of a no-show?
-- Does gender affect the likelihood of a no-show?
-- Does the day of the week affect the no-show rate?
-- Does waiting time affect the likelihood of a no-show?
-- Do SMS reminders help reduce no-shows?
-- Which neighborhoods have the highest number of no-shows?
-- Which patient groups have the highest risk of missing an appointment?
+This project analyzes patient appointment attendance data to identify patterns in attendance and no-show behavior.
+
+The analysis focuses on appointment attendance, patient demographics, health conditions, SMS reminders, waiting time, weekdays, age groups, gender, and neighbourhoods.
+
+The main goal is to understand which factors may be associated with missed medical appointments and to present the findings through an interactive dashboard created in Google Sheets.
 
 ---
-### Data Cleaning
-Before analysis, the dataset was checked for data quality issues:
-- Missing Values	
-- Missing Values 
-- Duplicate AppointmentID	
-- Negative Age Values	
 
-The dataset was validated, cleaned, and prepared for further analysis.
+## Dataset
+
+The dataset contains information about scheduled medical appointments, patients, and appointment attendance.
+
+### Main variables
+
+| Variable | Description |
+|---|---|
+| PatientID | Unique patient identifier |
+| AppointmentID | Unique appointment identifier |
+| Gender | Patient gender |
+| ScheduledDay | Date when the appointment was scheduled |
+| AppointmentDay | Date of the appointment |
+| Age | Patient age |
+| Neighbourhood | Patient's neighbourhood |
+| Scholarship | Scholarship status |
+| Hypertension | Whether the patient has hypertension |
+| Diabetes | Whether the patient has diabetes |
+| Alcoholism | Whether the patient has an alcoholism record |
+| Handicap | Handicap status |
+| SMS_received | Whether the patient received an SMS reminder |
+| No_show | Whether the patient missed the appointment |
+| 65+ | Whether the patient belongs to the 65+ age group |
+| Waiting_Days | Number of days between scheduling and appointment |
+| Weekday | Day of the week of the appointment |
+
+### No-show definition
+
+For this analysis:
+
+- `No_show = No` → patient **attended the appointment**
+- `No_show = Yes` → patient **did not attend the appointment**
 
 ---
-Key Metrics
-Metric	Value
-Total Appointments	1,001
-Unique Patients	1,001
-Attendance Rate	82.72%
-No-show Rate	17.18%
-Average Waiting Time	15 days
-Key Findings
-82.72% of appointments were attended.
-17.18% of appointments resulted in a no-show.
-The average waiting time between scheduling and appointment was 15 days.
-Patient Age Analysis
-Metric	Value
-Average Age	45
-Median Age	45
-Minimum Age	0
-Maximum Age	90
 
-The average and median age are both 45 years, suggesting a relatively balanced age distribution.
+## Tools
 
-Health Conditions
-Condition	Patients	Percentage
-Diabetes	118	8.5%
-Hypertension	242	17.5%
-Alcoholism	59	4.3%
-Handicap	642	46.4%
-Key Finding
+- **Google Sheets** — data analysis, calculations, pivot tables, and dashboard creation
+- **GitHub** — project documentation and version control
 
-Handicap was the most frequently recorded condition, representing 46.4% of patients in the analyzed dataset.
+---
 
-SMS Reminder Analysis
+## Analysis Period
 
-SMS reminders were analyzed to determine their relationship with appointment attendance.
+The analyzed appointments cover the period from **January 4, 2023 to July 23, 2023**.
 
-Attendance Rate
-SMS Status	Attended	Attendance Rate
-SMS received	496	84%
-SMS not received	332	81%
-No-show Rate
-SMS Status	No-shows	No-show Rate
-SMS received	95	16%
-SMS not received	77	19%
-Key Finding
+---
 
-Patients who received SMS reminders had:
+# Key Performance Indicators
 
-84% attendance rate compared with 81% for patients who did not receive SMS.
-16% no-show rate compared with 19% for patients who did not receive SMS.
+| KPI | Result |
+|---|---:|
+| Total Appointments | 1,000 |
+| Unique Patients | 1,000 |
+| Completed Visits | 828 |
+| No-show Visits | 172 |
+| Attendance Rate | 83% |
+| No-show Rate | 17% |
+| Average Waiting Days | 15 |
 
-This indicates a positive association between SMS reminders and appointment attendance. However, the analysis does not prove that SMS reminders directly caused the improvement.
+The overall attendance rate was **83%**, while **17% of scheduled appointments were missed**.
 
-Business Insights
-Appointment attendance is relatively high at 82.72%.
-Approximately 17% of appointments are missed, making no-shows an important operational issue.
-Patients receiving SMS reminders show a 3 percentage-point higher attendance rate.
-The average waiting time is 15 days, which could be an important factor in future no-show analysis.
-Patient demographics and health conditions provide opportunities for further patient segmentation.
-No-show risk could be investigated using age, waiting time, health conditions, SMS reminders, and appointment characteristics.
-Recommendations
+The average waiting time between scheduling and the appointment was **15 days**.
 
-Further analysis could include:
+---
 
-No-show rate by age group
-No-show rate by waiting time
-Attendance by health condition
-SMS effectiveness by age group
-Identification of high-risk patient segments
-Healthcare appointment KPI dashboard
-No-show prediction model
-Tools & Technologies
-CSV
-SQL
-Python / Pandas
-Power BI / Tableau
-GitHub
-Project Structure
-healthcare-appointment-analytics/
+# Patient Age Statistics
+
+| Metric | Value |
+|---|---:|
+| Average Age | 45 |
+| Median Age | 45 |
+| Minimum Age | 0 |
+| Maximum Age | 90 |
+
+The average and median patient age are both **45 years**, indicating that the age distribution is relatively balanced and not strongly skewed.
+
+Patients in the dataset ranged from **0 to 90 years old**.
+
+---
+
+# Patient Health Conditions
+
+| Health Condition | Quantity | % of Patients |
+|---|---:|---:|
+| Diabetes | 118 | 8.5% |
+| Hypertension | 242 | 17.5% |
+| Alcoholism | 59 | 4.3% |
+| Handicap | 642 | 46.4% |
+
+Among the analyzed health-related characteristics, **handicap status represented the largest group**, with 642 recorded cases (46.4%).
+
+---
+
+# SMS Reminder Analysis
+
+SMS reminders were analyzed to determine whether receiving a reminder was associated with appointment attendance.
+
+### No-show
+
+| SMS Status | No-show | No-show Rate |
+|---|---:|---:|
+| SMS received | 95 | 16% |
+| SMS not received | 77 | 19% |
+
+### Attendance
+
+| SMS Status | Attended | Attendance Rate |
+|---|---:|---:|
+| SMS received | 496 | 84% |
+| SMS not received | 332 | 81% |
+
+Patients who received SMS reminders had a **higher attendance rate (84%)** compared with patients who did not receive reminders (81%).
+
+The no-show rate was also lower among patients who received SMS reminders:
+
+- SMS received: **16% no-show**
+- SMS not received: **19% no-show**
+
+This suggests a possible positive association between SMS reminders and appointment attendance.
+
+> Note: This analysis shows an association in the dataset and does not establish that SMS reminders directly caused higher attendance.
+
+---
+
+# No-show Analysis by Gender
+
+| Gender | No-show Count | Share of No-shows |
+|---|---:|---:|
+| Female | 85 | 49% |
+| Male | 87 | 51% |
+| **Total** | **172** | **100%** |
+
+Among all missed appointments, males accounted for **51%** and females for **49%**.
+
+The difference between the two groups is relatively small.
+
+---
+
+# No-show Analysis by Age Group
+
+| Age Group | No-show Count | Share of No-shows |
+|---|---:|---:|
+| 65+ | 45 | 26% |
+| 0–18 | 37 | 22% |
+| 51–65 | 32 | 19% |
+| 19–35 | 30 | 17% |
+| 36–50 | 28 | 16% |
+| **Total** | **172** | **100%** |
+
+The **65+ age group accounted for the largest share of no-shows (26%)**, followed by patients aged 0–18 (22%).
+
+The 36–50 age group had the smallest share of no-shows among the defined age groups (16%).
+
+---
+
+# No-show Analysis by Neighbourhood
+
+| Neighbourhood | No-show Count | Share of No-shows |
+|---|---:|---:|
+| Jardim | 40 | 23% |
+| Centro | 37 | 22% |
+| Santa Maria | 36 | 21% |
+| Boa Vista | 32 | 19% |
+| Industrial | 27 | 16% |
+| **Total** | **172** | **100%** |
+
+The highest number of missed appointments was recorded among patients from **Jardim**, with 40 no-shows (23% of all missed appointments).
+
+Centro and Santa Maria followed with 22% and 21%, respectively.
+
+---
+
+# Appointment Attendance by Weekday
+
+### Completed appointments
+
+| Weekday | Completed Visits |
+|---|---:|
+| Monday | 124 |
+| Tuesday | 114 |
+| Wednesday | 106 |
+| Thursday | 115 |
+| Friday | 115 |
+| Saturday | 115 |
+| Sunday | 139 |
+| **Total** | **828** |
+
+The highest number of completed appointments occurred on **Sunday — 139 visits**.
+
+### No-show appointments
+
+| Weekday | No-show Count | Share of No-shows |
+|---|---:|---:|
+| Monday | 17 | 10% |
+| Tuesday | 28 | 16% |
+| Wednesday | 30 | 17% |
+| Thursday | 20 | 12% |
+| Friday | 29 | 17% |
+| Saturday | 25 | 15% |
+| Sunday | 23 | 13% |
+| **Total** | **172** | **100%** |
+
+The highest number of no-shows occurred on **Wednesday and Friday**, with 30 and 29 missed appointments respectively.
+
+---
+
+# Dashboard
+
+The project includes a Google Sheets dashboard designed to provide a concise overview of appointment attendance and no-show behavior.
+
+### Dashboard includes:
+
+- Total appointments
+- Unique patients
+- Attendance rate
+- No-show rate
+- Average waiting days
+- Patient age statistics
+- Health condition prevalence
+- Monthly attendance trend
+- SMS reminder impact
+- No-show by gender
+- No-show by age group
+- No-show by neighbourhood
+- Attendance by weekday
+- No-show by weekday
+
+The dashboard is designed to make the main patterns and differences easy to identify without reviewing the raw dataset.
+
+---
+
+# Key Insights
+
+### 1. Overall attendance
+
+The dataset contains **1,000 appointments**, of which **828 were completed** and **172 were missed**.
+
+The overall attendance rate was **83%**, with a **17% no-show rate**.
+
+### 2. SMS reminders
+
+Patients who received SMS reminders had a slightly higher attendance rate (**84%**) than those who did not receive reminders (**81%**).
+
+The no-show rate was correspondingly lower among patients who received SMS reminders (**16% vs. 19%**).
+
+### 3. Age
+
+The **65+ age group had the largest share of no-shows (26%)**.
+
+This may indicate that older patients could require additional attention when designing appointment reminder or follow-up strategies.
+
+### 4. Gender
+
+No-shows were relatively evenly distributed by gender:
+
+- Male — 51%
+- Female — 49%
+
+There is therefore no substantial difference in the composition of missed appointments by gender in this dataset.
+
+### 5. Neighbourhood
+
+**Jardim** had the largest share of no-shows among the analysed neighbourhoods (23%).
+
+This may help identify areas where additional investigation or targeted communication could be useful.
+
+### 6. Weekday
+
+The largest number of completed visits occurred on **Sunday (139)**.
+
+The largest number of missed appointments occurred on **Wednesday (30)**, closely followed by **Friday (29)**.
+
+---
+
+# Business Recommendations
+
+Based on the analysis, several areas could be considered for further investigation:
+
+1. **Continue using SMS reminders**, as patients who received reminders showed a slightly higher attendance rate.
+
+2. **Pay additional attention to older patients**, particularly the 65+ group, which represented the largest share of no-shows.
+
+3. **Investigate weekday patterns**, especially Wednesday and Friday, to determine whether scheduling patterns or operational factors contribute to missed appointments.
+
+4. **Explore neighbourhood-level differences** to understand whether accessibility, transportation, or other local factors may influence attendance.
+
+5. **Analyze waiting time in more detail** to determine whether longer periods between scheduling and appointments are associated with higher no-show rates.
+
+---
+
+# Limitations
+
+The analysis describes patterns observed in the dataset but does not establish causal relationships.
+
+For example, the lower no-show rate among patients receiving SMS reminders does not necessarily mean that SMS reminders directly caused patients to attend their appointments.
+
+Additional variables and statistical analysis would be required to identify causal relationships.
+
+The dataset also contains a limited number of appointments, so the results should not automatically be generalized to other healthcare settings or populations.
+
+---
+
+# Project Structure
+
+```text
+healthcare-appointment-analysis/
 │
 ├── data/
-│   └── healthcare_appointments.csv
-│
-├── analysis/
-│   └── analysis.sql
+│   └── dataset.csv
 │
 ├── dashboard/
-│   └── healthcare_appointment_dashboard.pbix
+│   └── dashboard_screenshot.png
 │
-└── README.md
-
-Project Status
-
-Completed — Test Assignment Simulation
-
-The dataset was profiled, validated, cleaned, and analyzed. The analysis focuses on appointment attendance, no-shows, patient demographics, health conditions, waiting time, and SMS reminders.
+├── README.md
+│
+└── ...
