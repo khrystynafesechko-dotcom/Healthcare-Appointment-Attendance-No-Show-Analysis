@@ -131,8 +131,6 @@ The no-show rate was also lower among patients who received SMS reminders:
 
 This suggests a possible positive association between SMS reminders and appointment attendance.
 
-> Note: This analysis shows an association in the dataset and does not establish that SMS reminders directly caused higher attendance.
-
 ---
 
 # No-show Analysis by Gender
