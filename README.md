@@ -276,6 +276,9 @@ The largest number of completed visits occurred on **Sunday (139)**.
 
 The largest number of missed appointments occurred on **Wednesday (30)**, closely followed by **Friday (29)**.
 
+### 7. Weekday
+
+SMS reminders are associated with a slightly lower no-show rate (16% vs. 19%), but the correlation is very weak (r ≈ 0.04), so no strong relationship can be established.
 ---
 
 # Business Recommendations
@@ -304,19 +307,3 @@ Additional variables and statistical analysis would be required to identify caus
 
 The dataset also contains a limited number of appointments, so the results should not automatically be generalized to other healthcare settings or populations.
 
----
-
-# Project Structure
-
-```text
-healthcare-appointment-analysis/
-│
-├── data/
-│   └── dataset.csv
-│
-├── dashboard/
-│   └── dashboard_screenshot.png
-│
-├── README.md
-│
-└── ...
