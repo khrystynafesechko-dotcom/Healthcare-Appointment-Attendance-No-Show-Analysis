@@ -276,11 +276,11 @@ The largest number of completed visits occurred on **Sunday (139)**.
 
 The largest number of missed appointments occurred on **Wednesday (30)**, closely followed by **Friday (29)**.
 
-### 7. Weekday
+### 7. No-Show Rate vs. Waiting Time
 
-SMS reminders are associated with a slightly lower no-show rate (16% vs. 19%), but the correlation is very weak (r ≈ 0.04), so no strong relationship can be established.
----
+There is a very weak positive correlation between waiting time and patient no-shows (r ≈ 0.04), suggesting that longer waiting times are associated with a slightly higher no-show rate. However, the relationship is too weak to consider waiting time a strong predictor of patient no-shows.
 
+----
 # Business Recommendations
 
 Based on the analysis, several areas could be considered for further investigation:
@@ -293,7 +293,7 @@ Based on the analysis, several areas could be considered for further investigati
 
 4. **Explore neighbourhood-level differences** to understand whether accessibility, transportation, or other local factors may influence attendance.
 
-5. **Analyze waiting time in more detail** to determine whether longer periods between scheduling and appointments are associated with higher no-show rates.
+5. **Analyze waiting time in more detail** . The business should monitor and minimise excessive waiting times where possible, but should not rely on waiting time as a primary strategy for reducing no-shows, as the correlation is very weak. Further analysis of other factors is recommended to identify stronger predictors of patient no-shows and support more targeted business decisions.
 
 ---
 
