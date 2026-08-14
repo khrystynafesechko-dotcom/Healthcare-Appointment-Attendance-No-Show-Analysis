@@ -220,19 +220,16 @@ The project includes a Google Sheets dashboard designed to provide a concise ove
 ### Dashboard includes:
 
 - Total appointments
-- Unique patients
-- Attendance rate
 - No-show rate
+- No-show Visits
 - Average waiting days
-- Patient age statistics
-- Health condition prevalence
-- Monthly attendance trend
-- SMS reminder impact
-- No-show by gender
-- No-show by age group
+- Completed Visits
+- Monthly Visit Trend
+- No-show rate by sms-reminder
 - No-show by neighbourhood
-- Attendance by weekday
+- No-show by age group
 - No-show by weekday
+- No-Show Rate vs. Waiting Time
 
 The dashboard is designed to make the main patterns and differences easy to identify without reviewing the raw dataset.
 
