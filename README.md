@@ -87,7 +87,7 @@ Patients in the dataset ranged from **0 to 90 years old**.
 
 ---
 
-# ##Prevalence of Patient Health Conditions
+###Prevalence of Patient Health Conditions
 
 | Health Condition | Quantity | % of Patients |
 |---|---:|---:|
@@ -100,7 +100,7 @@ Among the analyzed health-related characteristics, **Hypertension status represe
 
 ---
 
-# ##Appointment Attendance by SMS Reminder Status
+###Appointment Attendance by SMS Reminder Status
 
 SMS reminders were analyzed to determine whether receiving a reminder was associated with appointment attendance.
 
