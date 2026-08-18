@@ -217,6 +217,8 @@ The project includes a Google Sheets dashboard designed to provide a concise ove
 
 ### Dashboard includes:
 
+Healthcare.png
+
 - Total appointments
 - No-show Rate
 - No-show Visits
