@@ -219,10 +219,10 @@ The project includes a Google Sheets dashboard designed to provide a concise ove
 
 ![Healthcare Dashboard](Healthcare.png)
 
-- Total appointments
+- Total Appointments
 - No-show Rate
 - No-show Visits
-- Average waiting days
+- Average Waiting days
 - Completed Visits
 - Monthly Visit Trend
 - No-show by Sms-reminder
