@@ -4,9 +4,7 @@
 
 This project analyzes patient appointment attendance data to identify patterns in attendance and no-show behavior.
 
-The analysis focuses on appointment attendance, patient demographics, health conditions, SMS reminders, waiting time, weekdays, age groups, gender, and neighbourhoods.
-
-The main goal is to understand which factors may be associated with missed medical appointments and to present the findings through an interactive dashboard created in Google Sheets.
+Which patient, appointment, and operational factors are associated with medical appointment no-shows, and where should the business focus its efforts to improve attendance?
 
 ---
 
@@ -89,7 +87,7 @@ Patients in the dataset ranged from **0 to 90 years old**.
 
 ---
 
-# Patient Health Conditions
+# ##Prevalence of Patient Health Conditions
 
 | Health Condition | Quantity | % of Patients |
 |---|---:|---:|
@@ -102,7 +100,7 @@ Among the analyzed health-related characteristics, **Hypertension status represe
 
 ---
 
-# SMS Reminder Analysis
+# ##Appointment Attendance by SMS Reminder Status
 
 SMS reminders were analyzed to determine whether receiving a reminder was associated with appointment attendance.
 
@@ -220,16 +218,16 @@ The project includes a Google Sheets dashboard designed to provide a concise ove
 ### Dashboard includes:
 
 - Total appointments
-- No-show rate
+- No-show Rate
 - No-show Visits
 - Average waiting days
 - Completed Visits
 - Monthly Visit Trend
-- No-show rate by sms-reminder
-- No-show by neighbourhood
-- No-show by age group
-- No-show by weekday
-- No-Show Rate vs. Waiting Time
+- No-show by Sms-reminder
+- No-show by Neighbourhood
+- No-show by Age group
+- No-show by Weekday
+- No-Show vs. Waiting Time
 
 The dashboard is designed to make the main patterns and differences easy to identify without reviewing the raw dataset.
 
